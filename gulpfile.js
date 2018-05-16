@@ -45,9 +45,10 @@ var sassOptions = {
 // development tasks
 gulp.task('browser-sync', ['inject'], function(){
     bs.init({
-        proxy:  'gulp.local',
-        host:   'gulp.local',
-        open:   'external',
+        injectChanges: true,
+        proxy:  'login.local',
+        host:   'login.local',
+        open:   'internal',
         port:   3000,
         notify: false
     });
@@ -57,6 +58,7 @@ gulp.task('html', function(){
     return gulp.src(paths.srcHTML)
         .pipe(htmlclean())
         .pipe(gulp.dest(paths.tmp))
+        .pipe(bs.reload({stream: true}))
 });
 
 gulp.task('sass', function(){

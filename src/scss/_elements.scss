@@ -1,6 +1,6 @@
-.awesome {
-    color: blue;
+input[type=submit] {
+    background: $primary-color;
     &:hover {
-        color: purple;
+        background: $secondary-color;
     }
 }
