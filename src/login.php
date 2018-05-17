@@ -3,7 +3,7 @@
 <div class="container">
     <form action="" method="post" class="js-login mt-5">
         <div class="login-icon d-table p-3 rounded-circle">
-            <img src="/img/logo-icon.png" title="UXFocus Icon">
+            <img src="/assets/img/logo-icon.png" title="UXFocus Icon">
         </div>
         <div class="jumbotron m-auto py-4 border-light">
             <h2 class="text-muted text-uppercase text-center py-3">Login </h2>

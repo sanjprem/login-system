@@ -14,27 +14,27 @@ var paths = {
     // creating
     src:        'src/**/*',
     srcHTML:    'src/**/*.php',
-    srcSCSS:    'src/scss/*.scss',
-    srcCSS:     'src/**/*.css',
-    srcJS:      'src/js/*.js',
-    srcIMG:     'src/img/*',
+    srcSCSS:    'src/assets/scss/*.scss',
+    srcCSS:     'src/assets/**/*.css',
+    srcJS:      'src/assets/js/*.js',
+    srcIMG:     'src/assets/img/*',
     // testing
     tmp:        'tmp',
     tmpIndex:   'tmp/**/*.php',
-    tmpCSSdir:  'tmp/css',
-    tmpCSS:     'tmp/css/*.css',
-    tmpJSdir:   'tmp/js',
-    tmpJS:      'tmp/js/*.js',
-    tmpIMG:     'tmp/img/*',
-    tmpIMGdir:  'tmp/img',
+    tmpCSSdir:  'tmp/assets/css',
+    tmpCSS:     'tmp/assets/css/*.css',
+    tmpJSdir:   'tmp/assets/js',
+    tmpJS:      'tmp/assets/js/*.js',
+    tmpIMG:     'tmp/assets/img/*',
+    tmpIMGdir:  'tmp/assets/img',
     // production
     dist:       'dist',
     distIndex:  'dist/**/*.php',
-    distCSSdir: 'dist/css',
-    distCSS:    'dist/css/*.css',
-    distJSdir:  'dist/js',
-    distJS:     'dist/js/*.js',
-    distIMG:    'dist/img'
+    distCSSdir: 'dist/assets/css',
+    distCSS:    'dist/assets/css/*.css',
+    distJSdir:  'dist/assets/js',
+    distJS:     'dist/assets/js/*.js',
+    distIMG:    'dist/assets/img'
 };
 
 var sassOptions = {
@@ -106,7 +106,7 @@ gulp.task('inject', ['copy'], function(){
 
 gulp.task('watch', ['browser-sync'], function(){
     gulp.watch(paths.src, ['inject']);
-    gulp.watch("./src/sass/*.scss", ['style']);
+    gulp.watch("./src/assets/sass/*.scss", ['style']);
     gulp.watch("*.php").on('change', bs.reload);
 });
 

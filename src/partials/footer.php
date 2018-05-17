@@ -1,7 +1,7 @@
 <?php
 
-    // file won't load if not defined
-    if(!defined('__CONFIG__')){ 
+    // page will not load if constant defined not called
+    if(!defined('__CONFIG__')) { 
         exit('Access denied.');
     }
 
