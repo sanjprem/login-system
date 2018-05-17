@@ -20,7 +20,7 @@ var paths = {
     srcIMG:     'src/img/*',
     // testing
     tmp:        'tmp',
-    tmpIndex:   'tmp/index.php',
+    tmpIndex:   'tmp/**/*.php',
     tmpCSSdir:  'tmp/css',
     tmpCSS:     'tmp/css/*.css',
     tmpJSdir:   'tmp/js',
@@ -29,7 +29,7 @@ var paths = {
     tmpIMGdir:  'tmp/img',
     // production
     dist:       'dist',
-    distIndex:  'dist/index.php',
+    distIndex:  'dist/**/*.php',
     distCSSdir: 'dist/css',
     distCSS:    'dist/css/*.css',
     distJSdir:  'dist/js',
@@ -48,7 +48,7 @@ gulp.task('browser-sync', ['inject'], function(){
         injectChanges: true,
         proxy:  'login.local',
         host:   'login.local',
-        open:   'internal',
+        open:   'external',
         port:   3000,
         notify: false
     });
