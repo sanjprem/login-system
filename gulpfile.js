@@ -83,8 +83,6 @@ gulp.task('css', function(){
 
 gulp.task('js', function(){
     return gulp.src(paths.srcJS)
-        .pipe(concat('script.min.js'))
-        .pipe(uglify())
         .pipe(gulp.dest(paths.tmpJSdir))
 });
 
