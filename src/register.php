@@ -9,15 +9,14 @@
             <h2 class="text-muted text-uppercase text-center py-3">Register </h2>
             <div class="form-group mt-3">
                 <label for="email" class="form-text text-muted text-uppercase">Email</label>
-                <input type="text" class="form-control form-control-lg" id="email" name="email" required>
+                <input type="email" class="form-control form-control-lg" id="email" name="email" required="required">
             </div>
             <div class="form-group">
                 <label for="password" class="form-text text-muted text-uppercase">Password</label>
-                <input type="password" class="form-control form-control-lg" id="password" name="password" required>
+                <input type="password" class="form-control form-control-lg" id="password" name="password"  required="required">
             </div>
-            <div class="form-group">
-                <label for="passwordConf" class="form-text text-muted text-uppercase">Confirm Password</label>
-                <input type="password" class="form-control form-control-lg" id="passwordConf" name="passwordConf" required>
+            <div class="alert alert-danger js-error" role="alert" style="display:none">
+                A simple danger alert—check it out!
             </div>
             <div class="text-center"> 
                 <input type="submit" class="btn text-white btn-lg btn-block mt-4" id="register" name="registerBtn" value="Sign Up">
