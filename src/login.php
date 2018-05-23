@@ -9,7 +9,7 @@
             <h2 class="text-muted text-uppercase text-center py-3">Login </h2>
             <div class="form-group mt-3">
                 <label for="email" class="form-text text-muted text-uppercase">Email</label>
-                <input type="text" class="form-control form-control-lg" id="email" name="email" required>
+                <input type="email" class="form-control form-control-lg" id="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="password" class="form-text text-muted text-uppercase">Password</label>

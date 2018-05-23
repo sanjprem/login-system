@@ -15,9 +15,7 @@
                 <label for="password" class="form-text text-muted text-uppercase">Password</label>
                 <input type="password" class="form-control form-control-lg" id="password" name="password"  required="required">
             </div>
-            <div class="alert alert-danger js-error" role="alert" style="display:none">
-                A simple danger alert—check it out!
-            </div>
+            <div class="alert alert-danger js-error" role="alert" style="display:none"></div>
             <div class="text-center"> 
                 <input type="submit" class="btn text-white btn-lg btn-block mt-4" id="register" name="registerBtn" value="Sign Up">
             </div>

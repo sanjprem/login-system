@@ -18,7 +18,7 @@
 
         if($findUser->rowCount() == 1) {
             // user exisit
-            $return['error'] = "Email is already used.";
+            $return['error'] = "Email is already in use.";
             $return['is_logged_in'] = false;
         } else {
             // add user

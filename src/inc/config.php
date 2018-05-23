@@ -5,6 +5,11 @@
         exit('Access denied.');
     }
 
+    // sessions always on
+    if(!isset($_SESSION)) {
+        session_start();
+    }
+
     // allow errors
     error_reporting(-1);
     ini_set('display_errors', 'On');
