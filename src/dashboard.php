@@ -2,10 +2,12 @@
 
 include_once "partials/header.php"; 
 
+ForceLogin();
+
 ?>
 
 <div class="container">
-    <h1>Hello, World! </h1>
+    <h1>Dashboard </h1>
 </div>
 
 <?php include_once "partials/footer.php"; ?>

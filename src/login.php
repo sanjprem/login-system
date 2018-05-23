@@ -1,4 +1,10 @@
-<?php include_once "partials/header.php"; ?>
+<?php 
+
+include_once "partials/header.php";
+
+ForceDashboard();
+
+?>
 
 <div class="container">
     <form action="" method="post" class="js-login mt-5">
