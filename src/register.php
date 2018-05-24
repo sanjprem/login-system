@@ -2,7 +2,7 @@
 
     include_once "partials/header.php";
 
-    ForceDashboard();
+    Page::ForceDashboard();
 
 ?>
 

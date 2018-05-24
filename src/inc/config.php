@@ -16,6 +16,8 @@
 
     include_once "classes/database.php";
     include_once "classes/filter.php";
+    include_once "classes/page.php";
+    include_once "classes/user.php";
     include_once "functions.php";
 
     $con = Database::getConnection();
